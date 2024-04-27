@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100vw;
+  overflow-x: hidden;
+  /* height: 100vh; */
+}
+
+.container {
+  background-color: #111;
+  height: 100vh;
+  color: white;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+
+ul {
+  display: flex;
+  gap: 20px;
+}
+
+ul li {
+  list-style: none;
+}
+
+.hero {
+  margin-top: 200px;
+  text-align: center;
+  font-size: 50px;
+}
+
+/* Second Page */
+.page2{
+  height: 100vh;
+  background-color: lightblue;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.page2 h1{
+  color: crimson;
+  text-transform: uppercase;
+  font-size: 50vw;
+  font-family: "Poppins";
+}
+
+/* page 3 */
+.page3{
+  height: 100vh;
+  background-color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.string{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1200px;
+  height: 400px;
+  cursor: pointer;
+  /* background-color: royalblue; */
+}
