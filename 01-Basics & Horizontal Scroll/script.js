@@ -34,28 +34,3 @@ gsap.to(".page2 h1", {
     pin: true,
   },
 });
-
-// page 3
-
-let initialPath = "M 0 100 Q 600 100 1200 100";
-let finalPath = "M 0 100 Q 600 100 1200 100";
-
-let string = document.querySelector(".string")
-
-string.addEventListener("mousemove",function (dets) {
-  finalPath = `M 0 100 Q ${dets.x} ${dets.y} 1200 100`
-
-  gsap.to("svg path", {
-    attr: { d: finalPath},
-    duration: 0.3,
-    ease: "power3.out",
-  })
-})
-
-string.addEventListener("mouseleave", function(){
-  gsap.to("svg path", {
-    attr: { d: initialPath},
-    duration: 1,
-    ease: "elastic.out(1,0.2)",
-  })
-})

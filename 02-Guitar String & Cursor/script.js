@@ -14,7 +14,9 @@ window.addEventListener("mousemove", function (dets) {
 
 string.addEventListener("mouseenter", function () {
   gsap.to(cursor, {
-    scale: 4,
+    // scale: 4,
+    duration: 0.5,
+    backgroundColor: "lightgreen"
   });
 });
 
@@ -30,12 +32,13 @@ string.addEventListener("mousemove", function (dets) {
 
 string.addEventListener("mouseleave", function () {
   gsap.to(cursor, {
-    scale: 1,
+    // scale: 1,
+    backgroundColor: "white"
   });
 
   gsap.to("svg path", {
     attr: { d: initialPath },
-    duration: 1,
-    ease: "elastic.out(1,0.2)",
+    duration: 1.2,
+    ease: "elastic.out(1,0.1)",
   });
 });
