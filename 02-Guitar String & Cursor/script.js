@@ -1,5 +1,5 @@
-let initialPath = "M 0 100 Q 600 100 1200 100";
-let finalPath = "M 0 100 Q 600 100 1200 100";
+let initialPath = "M 0 100 Q 500 100 1000 100";
+let finalPath = "M 0 100 Q 500 100 1000 100";
 
 let string = document.querySelector("#string");
 let cursor = document.querySelector("#cursor");
@@ -16,12 +16,12 @@ string.addEventListener("mouseenter", function () {
   gsap.to(cursor, {
     // scale: 4,
     duration: 0.5,
-    backgroundColor: "lightgreen"
+    backgroundColor: "lightgreen",
   });
 });
 
 string.addEventListener("mousemove", function (dets) {
-  finalPath = `M 0 100 Q ${dets.x} ${dets.y} 1200 100`;
+  finalPath = `M 0 100 Q ${dets.x} ${dets.y} 1000 100`;
 
   gsap.to("svg path", {
     attr: { d: finalPath },
@@ -33,7 +33,7 @@ string.addEventListener("mousemove", function (dets) {
 string.addEventListener("mouseleave", function () {
   gsap.to(cursor, {
     // scale: 1,
-    backgroundColor: "white"
+    backgroundColor: "white",
   });
 
   gsap.to("svg path", {
