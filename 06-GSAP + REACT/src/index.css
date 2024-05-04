@@ -1,0 +1,55 @@
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+#page {
+  height: 100vh;
+  width: 100vw;
+  padding: 2vw;
+  background-color: #111;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position: relative;
+  overflow: hidden;
+}
+
+#page button{
+  position: absolute;
+  top: 10%;
+  padding: 1vw 2vw;
+  background-color: rgb(44, 240, 5);
+  color: white;
+  font-size: 1.25vw;
+  font-weight: 700;
+  border-radius: 2vw;
+  cursor: pointer;
+  z-index: 2;
+}
+
+#page button:active{
+  scale: 0.98;
+}
+
+#container{
+  border: 3px solid white;
+  padding: 2vw;
+  border-radius: 1vw;
+}
+
+#box {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 20px;
+  background: linear-gradient(to right bottom,rgb(241, 68, 103), crimson);
+}
+
+#circle {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+  margin-bottom: 2vw;
+  background: linear-gradient(to right bottom,rgb(255, 200, 200),silver);
+}
